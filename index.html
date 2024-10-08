@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>AtividadeJava</title>
+</head>
+<body>
+    
+    <script>
+/*
+        var n1,n2,n3,media;
+        n1=prompt("Digite o primeiro numero:");
+        n1=parseInt(n1);
+        n2=prompt("Digite o segundo numero: ");
+        n2=parseInt(n2);
+        n3=prompt("Digite o terceiro numero:");
+        n3=parseInt(n3);
+
+        if(n1<n2)
+        {
+           media = (n2+n3) /2;
+        }
+        else{
+            if(n2<n3)
+            {
+            media = (n1+n3)/2;
+            }
+        }
+        alert("Media:"+media);
+
+
+
+    var n1, total;
+    n1=prompt("Digite um numero:");
+    n1=parseFloat(n1);
+
+    if(n1>10)
+    {
+        alert("NOTA INVALIDA");
+    }
+    else{
+        alert("NOTA VALIDA")
+    }
+
+3) Tendo como entrada a altura e o sexo de uma pessoa, construa um programa que calcule e imprima o peso ideal utilizando as fórmulas:
+- para homens: (72.7 * Altura) - 58
+- para mulheres (62.1 * Altura) - 44.7
+
+
+*/
+
+var altura, sexo, peso;
+altura=prompt("Digite a sua altura:");
+altura=parseFloat(altura);
+sexo=prompt("Digite o seu sexo (M se for homem ou F se for mulher)");
+sexo= sexo.toLowerCase();
+if(sexo=="m")
+{
+    peso = (72.7 * altura) -58 ;
+}
+else{
+    if(sexo=="f")
+    {
+        peso = (62.1 * altura) -44.7 ;
+    }
+}
+alert("Peso: "+peso);
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>
