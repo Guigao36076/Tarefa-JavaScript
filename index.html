@@ -49,7 +49,7 @@
 - para mulheres (62.1 * Altura) - 44.7
 
 
-*/
+
 
 var altura, sexo, peso;
 altura=prompt("Digite a sua altura:");
@@ -68,10 +68,35 @@ else{
 }
 alert("Peso: "+peso);
 
+*/
 
+var salario,porcentagem,aumento,salarioantigo;
+salario=prompt ("Digite o seu salario:");
+salario=parseFloat(salario);
+salarioantigo=salario;
+if(salario<=280)
+{
+    porcentagem=20;
+    salario=salario*1.20;
+}
+else if (salario>280 && salario<=700)
+{
+    porcentagem=15;
+    salario=salario*1.15;
+}
+else if(salario>700 && salario<=1500)
+{
+    porcentagem=10;
+    salario=salario*1.10;
+}
+else if(salario>1500)
+{
+    porcentagem=5;
+    salario=salario*1.05;
+}
+aumento= salario-salarioantigo;
 
-
-
+alert("Seu salario antes do reajuste: "+salarioantigo.toFixed (2)+ "\nPorcentagem de aumento: " +porcentagem + "\nValor do aumento: " +aumento.toFixed (2) +"\nSeu novo salario e: "+salario.toFixed (2));
 
     </script>
 
